@@ -1,0 +1,23 @@
+name: FlyCommand
+main: MCrafters\FlyCommand
+version: 1.0.0
+api: [1.13.0]
+load: STARTUP
+author: MCrafters Team
+description: Fly with /fly command!
+commands:
+ fly:
+  description: "Starts/stops fly mode for the current sender/player"
+  usage: "/fly <player>"
+  permission: flycommand.fly;flycommand.fly.other
+permissions:
+ flycommand:
+  description: "Default FlyCommand permission"
+  default: op
+  children:
+   flycommand.fly:
+    description: "Allow using /fly command"
+    default: op
+   flycommand.other:
+    description: "Allow enabling flying for other players"
+    default: op
