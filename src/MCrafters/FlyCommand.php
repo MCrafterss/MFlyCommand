@@ -57,7 +57,7 @@ class FlyCommand extends PluginBase implements Listener {
            }
            return true;
         }
-        else {
+        elseif(!$sd->hasPermission("fc.command")) {
           $sd->sendMessage($this->getPrefix().MF::RED."You don't have permission for enabling flying for other players");
         }
       }
@@ -79,15 +79,15 @@ class FlyCommand extends PluginBase implements Listener {
               }
             return true;
           }
-          else {
+          elseif(!$sd instanceof Player) {
             $sd->sendMessage($this->getPrefix().MF::RED."Console can't fly!");
             return true;
           }
          return true;
         }
-        else {
+        elseif(!$sd->hasPermission("fc.command")) {
           $sd->sendMessage($this->getPrefix().MF::RED."You don't have permissions for /fly!");
-          return true;
+          return false;
         }
        return true;
       }
