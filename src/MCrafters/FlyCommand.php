@@ -21,7 +21,7 @@ class FlyCommand extends PluginBase implements Listener {
       $this->getLogger()->info(MF::AQUA."FlyCommand ".MF::AQUA."v1.0 ".MF::GREEN."by MCrafters");
     }
 
-    public function onDisable{
+    public function onDisable(){
       $this->getLogger()->info(MF::DARK_RED."FlyCommand DISABLED!");
     }
     
