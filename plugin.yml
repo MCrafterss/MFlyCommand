@@ -3,7 +3,7 @@ main: MCrafters\FlyCommand
 version: 1.0.0
 api: [1.13.0]
 load: STARTUP
-author: MCrafters Team
+author: MCrafters
 description: Fly with /fly command!
 commands:
  fly:
